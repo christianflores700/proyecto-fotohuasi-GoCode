@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <!-- Autor -->
+    <meta name="author" content="Christian Flores">
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <!-- Descripcion -->
+    <meta name="description" content="Blog de Fotográfos">
+    <!-- Keywords -->
+    <meta name="keywords" content="Fotográfos, blog de fotografía">
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/assets/img/Shutter-Aperture-17.ico" type="image/x-icon">
     <!-- BOOTSTRAP CSS -->
@@ -11,80 +18,564 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <!-- ICONOS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <!-- titulo -->
+    <title>FotoHuasi | Blog de fotográfos</title>
+    <!-- FIN TITULO -->
 </head>
+
 <body>
-  <div class="cuerpo">
-  <!-- HEADER -->
-<!-- Aqui comienza el navbar -->
-  <nav class="navbar bg-body-tertiary ">
-        <div class="container-fluid badge bg-black">
-          <a class="navbar-brand text-light" href="">
-            <img src="/assets/img/Shutter-Aperture-17.svg" alt="Logo" width="50" height="50" class="align-text-center" >
-            FotoHuasi  
+<!-- header -->
+    <header>
+  <!-- Aqui comienza el navbar -->
+  <nav class="navbar bg-body-tertiary p-0">
+    <div class="container-fluid badge bg-black">
+      <a class="navbar-brand text-light" href="/index.html">
+        <img src="/assets/img/Shutter-Aperture-17.svg" alt="Logo" width="50" height="50" class="align-text-center" >
+        FotoHuasi  
+      </a>
+
+      <div class="login">
+        <button type="button" class="btn  btn-lg text-light">
+          <a href="/login.html" target="_blank">
+            <i class="bi bi-person-circle"></i>
           </a>
-          <form class="d-flex " role="search">
-            <input class="form-control bg-secondary opacity-90  " type="search" placeholder="Ingrese búsqueda" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Buscar</button>
-          </form>
-      
-        </div>
-      </nav>
-<!-- Aqui culmina el navbar -->
+        </button>
+      </div>
+
+      <form class="d-flex " role="search">
+        <input class="form-control bg-secondary opacity-90  " type="search" placeholder="Ingrese búsqueda" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+  
+    </div>
+  </nav>
+  <!-- Aqui culmina el navbar -->
+    </header>
 
 <!-- MAIN -->
-<!-- CARD 1-->
-<!-- Button trigger modal -->
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="">
-  <div class="card-body">
-    <h5 class="card-title">Fotográfo/perfil/redes</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
-    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Photo Galery <i class="bi bi-arrow-right"></i>
-    </button>
-  </div>
-</div>
 
-<!-- Modal 1-->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel"><div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <main class="bgmain">
+    <div class="container-fluid">
+      <div class="row p-5 bg-black text-light text-opacity-75 ">
+          <div class="col-xs-12 col-md-6 col-lg-4 ">
+            
+            <section class="sectioncard">
+              <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+        <!-- CARD 1-->
+                      <div class="card" style="width: 22rem;">
+              <img src="/assets/img/portrait_profile/portrait1.jpg" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">Florencia/Fotografia social/instagram</h5>
+                <!-- botones RRSS perfil -->
+                <p>
+                    <button type="button" class="btn btn-lg ">
+                      <a href="https://facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                      </a>
+                    </button>
+                  <button type="button" class="btn  btn-lg">
+                    <a href="https://facebook.com" target="_blank">
+                      <i class="bi bi-whatsapp"></i>
+                    </a>
+                  </button>
+                  <button type="button" class="btn btn-lg mb-2">
+                    <a href="https://instagram.com" target="_blank">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                  </button>
+                </p>
+                <!-- fin botones RRSS perfil -->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Photo Galery <i class="bi bi-arrow-right"></i>
+                </button>
+                <!-- fin button trigger modal -->
+              </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        <!-- Modal 1-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel"><div id="carouselExampleIndicators" class="carousel slide">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="/assets/img/imagen1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="/assets/img/imagen3.webp" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="/assets/img/imagen2(1).png" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                    
+                    </div>
+                  </div>
+                    </div>
+            </section>
+           
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/assets/img/imagen1.jpeg" class="d-block w-100" alt="...">
+  
+  
+        <div class="col-xs-12 col-md-6 col-lg-4">
+         
+          <section class="sectioncard">
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                  <div class="col-xs-12 col-md-6 col-lg-3 ">
+      <!-- CARD 1-->
+      <!-- Button trigger modal -->
+                    <div class="card" style="width: 22rem;">
+            <img src="/assets/img/portrait_profile/portrait2.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Florencia/Fotografia social/instagram</h5>
+              <!-- botones RRSS perfil -->
+              <p>
+                <button type="button" class="btn btn-lg ">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </button>
+              <button type="button" class="btn  btn-lg">
+                <a href="https://facebook.com" target="_blank">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-lg mb-2">
+                <a href="https://instagram.com" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </button>
+            </p>
+            <!-- fin botones RRSS perfil -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Photo Galery <i class="bi bi-arrow-right"></i>
+              </button>
             </div>
-            <div class="carousel-item">
-              <img src="/assets/img/imagen3.webp" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item">
-              <img src="/assets/img/imagen2(1).png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <!-- Modal 1-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"><div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/assets/img/imagen1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen3.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen2(1).png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                  
+                  </div>
+                </div>
+                  </div>
+          </section>
+          
+       
         </div>
+  
+        <div class="col-xs-12 col-md-6 col-lg-4">
+         
+          <section class="sectioncard">
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                  <div class="col-xs-12 col-md-6 col-lg-3 ">
+      <!-- CARD 1-->
+      <!-- Button trigger modal -->
+                    <div class="card" style="width: 22rem;">
+            <img src="/assets/img/portrait_profile/portrait3.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Florencia/Fotografia social/instagram</h5>
+               <!-- botones RRSS perfil -->
+               <p>
+                 <button type="button" class="btn btn-lg ">
+                   <a href="https://facebook.com" target="_blank">
+                     <i class="bi bi-facebook"></i>
+                   </a>
+                 </button>
+               <button type="button" class="btn  btn-lg">
+                 <a href="https://facebook.com" target="_blank">
+                   <i class="bi bi-whatsapp"></i>
+                 </a>
+               </button>
+               <button type="button" class="btn btn-lg mb-2">
+                 <a href="https://instagram.com" target="_blank">
+                   <i class="bi bi-instagram"></i>
+                 </a>
+               </button>
+             </p>
+                            <!-- fin botones RRSS perfil -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Photo Galery <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+      <!-- Modal 1-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"><div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/assets/img/imagen1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen3.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen2(1).png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                  
+                  </div>
+                </div>
+                  </div>
+          </section>
+          
+       
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+         
+          <section class="sectioncard">
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                  <div class="col-xs-12 col-md-6 col-lg-3 ">
+      <!-- CARD 1-->
+      <!-- Button trigger modal -->
+                    <div class="card" style="width: 22rem;">
+            <img src="/assets/img/portrait_profile/portrait4.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Florencia/Fotografia social/instagram</h5>
+                              <!-- botones RRSS perfil -->
+                              <p>
+                                <button type="button" class="btn btn-lg ">
+                                  <a href="https://facebook.com" target="_blank">
+                                    <i class="bi bi-facebook"></i>
+                                  </a>
+                                </button>
+                              <button type="button" class="btn  btn-lg">
+                                <a href="https://facebook.com" target="_blank">
+                                  <i class="bi bi-whatsapp"></i>
+                                </a>
+                              </button>
+                              <button type="button" class="btn btn-lg mb-2">
+                                <a href="https://instagram.com" target="_blank">
+                                  <i class="bi bi-instagram"></i>
+                                </a>
+                              </button>
+                            </p>
+                            <!-- fin botones RRSS perfil -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Photo Galery <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+      <!-- Modal 1-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"><div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/assets/img/imagen1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen3.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen2(1).png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                  
+                  </div>
+                </div>
+                  </div>
+          </section>
+          
+       
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+         
+          <section class="sectioncard">
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                  <div class="col-xs-12 col-md-6 col-lg-3 ">
+      <!-- CARD 1-->
+      <!-- Button trigger modal -->
+                    <div class="card" style="width: 22rem;">
+            <img src="/assets/img/portrait_profile/portrait5.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Florencia/Fotografia social/instagram</h5>
+              <!-- botones RRSS perfil -->
+              <p>
+                <button type="button" class="btn btn-lg ">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </button>
+              <button type="button" class="btn  btn-lg">
+                <a href="https://facebook.com" target="_blank">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-lg mb-2">
+                <a href="https://instagram.com" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </button>
+              </p>
+              <!-- fin botones RRSS perfil -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Photo Galery <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+      <!-- Modal 1-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"><div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/assets/img/imagen1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen3.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen2(1).png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                  
+                  </div>
+                </div>
+                  </div>
+          </section>
+          
+       
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-4">
+         
+          <section class="sectioncard">
+            <div class="container-fluid">
+              <div class="row justify-content-between">
+                  <div class="col-xs-12 col-md-6 col-lg-3 ">
+      <!-- CARD 1-->
+      <!-- Button trigger modal -->
+                    <div class="card" style="width: 22rem;">
+            <img src="/assets/img/portrait_profile/portrait6.jpg" class="card-img-top" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Florencia/Fotografia social/instagram</h5>
+              <!-- botones RRSS perfil -->
+              <p>
+                <button type="button" class="btn btn-lg ">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </button>
+              <button type="button" class="btn  btn-lg">
+                <a href="https://facebook.com" target="_blank">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+              </button>
+              <button type="button" class="btn btn-lg mb-2">
+                <a href="https://instagram.com" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </button>
+            </p>
+            <!-- fin botones RRSS perfil -->
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Photo Galery <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+      <!-- Modal 1-->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel"><div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="/assets/img/imagen1.jpeg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen3.webp" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/assets/img/imagen2(1).png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                  
+                  </div>
+                </div>
+                  </div>
+          </section>
+          
+       
+        </div>
+
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-     
+
+      
+  
+
     </div>
-  </div>
-</div>
+  
+
+  </main>
 
 <!-- FOOTER -->
 <footer>
@@ -158,6 +649,5 @@
     
    <!--SCRIPTS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </div>
 </body>
 </html>
