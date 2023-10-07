@@ -69,7 +69,7 @@ margin: 5px;
 
 
 /* ERROR 404 */
-@use postcss-cssnext;
+  postcss-cssnext;
 /* helpers/align.css */
 
 .align {
