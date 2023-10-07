@@ -1,3 +1,11 @@
+body::-webkit-scrollbar{
+  background-color: #a0a0a02c;
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb{
+  background: rgba(255, 255, 255, 0.185);
+  border-right: 2px solid black;
+}
 
 body{
     margin: 0;
