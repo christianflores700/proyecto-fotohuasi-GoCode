@@ -23,16 +23,17 @@
     <!-- FIN TITULO -->
   </head>
 
-  <body>
+<body class="bg-black">
 <!-- header -->
-    <header>
+<header>
   <!-- Aqui comienza el navbar -->
-  <nav class="navbar bg-body-tertiary ">
+  <nav class="navbar bg-body-tertiary p-0">
     <div class="container-fluid badge bg-black">
       <a class="navbar-brand text-light" href="/index.html">
         <img src="/assets/img/Shutter-Aperture-17.svg" alt="Logo" width="50" height="50" class="align-text-center" >
         FotoHuasi  
       </a>
+
   
     </div>
   </nav>
@@ -43,37 +44,33 @@
 
 <main>
 
-<!-- ESTRUCTURA DE LOGIN -->
-<section class="login bg-black text-light">
-<div class="container">
-  <div class="row">
-    <div class="col-2">
-    </div>
-    
-    <div class="col-8 estructura_login">
-      <div class="modal-body">
-        <form>
+
+
+        <form class="formulario-login">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text text-light">Nunca compartiremos tu información con nadie.</div>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+            <div id="emailHelp" class="form-text">Nunca compartiremos su email con nadie.</div>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" id="exampleInputPassword1 " placeholder="Ingrese su contraseña">
           </div>
-          <div class="modal-footer">
-            <button type="summit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
           </div>
-          
+          <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+     
+        
+ 
+      
 
-      </div>
-    </div>
-  </div>
-</div>
-</section>
 
+
+
+ 
 </main>
 <!-- FOOTER -->
 <footer>

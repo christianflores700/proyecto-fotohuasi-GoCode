@@ -33,15 +33,51 @@
         <img src="/assets/img/Shutter-Aperture-17.svg" alt="Logo" width="50" height="50" class="align-text-center" >
         FotoHuasi  
       </a>
-
+<!-- BOTÓN DE FORMULARIO LOGIN-->
       <div class="login">
-        <button type="button" class="btn  btn-lg text-light">
-          <a href="/login.html" target="_blank">
+        <button type="button" class="btn  btn-lg text-light" data-bs-toggle="modal" data-bs-target="#exampleModalformulario">
+          <a href="#exampleModalformulario">
             <i class="bi bi-person-circle"></i>
           </a>
         </button>
       </div>
+<!-- FIN BOTON DE FORMULARIO LOGIN -->
 
+
+<!-- INICIO Modal DE FORMULARIO LOGIN-->
+<div class="modal fade" id="exampleModalformulario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-black">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar sesión</h1>
+        <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- INICIO DE FORMULARIO LOGIN -->
+        <form class="formulario-login">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+            <div id="emailHelp" class="form-text text-light">Nunca compartiremos su email con nadie.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1 " placeholder="Ingrese su contraseña">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <!-- FIN DE FORMULARIO LOGIN -->
+      </div>
+   
+    </div>
+  </div>
+</div>
+<!-- FIN MODAL FORMULARIO LOGIN -->
       <form class="d-flex " role="search">
         <input class="form-control bg-secondary opacity-90  " type="search" placeholder="Ingrese búsqueda" aria-label="Search">
         <button class="btn btn-outline-light" type="submit">Buscar</button>
