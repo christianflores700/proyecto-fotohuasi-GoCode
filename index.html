@@ -29,14 +29,14 @@
   <!-- Aqui comienza el navbar -->
   <nav class="navbar bg-body-tertiary p-0">
     <div class="container-fluid badge bg-black">
-      <a class="navbar-brand text-light" href="../proyecto-fotohuasi-GoCode-1/index.html">
+      <a class="navbar-brand text-light" href="/index.html">
         <img src="https://firebasestorage.googleapis.com/v0/b/fotohuasi-24c24.appspot.com/o/Shutter-Aperture-17.svg?alt=media&token=022bee57-76af-4b5a-bc57-2bcb8a1750ec&_gl=1*18wubbo*_ga*MzkzMzkwMjc0LjE2OTY2NDAxMzY.*_ga_CW55HF8NVT*MTY5NjY3Nzk5OS4yLjEuMTY5NjY3ODAzNC4yNS4wLjA." alt="Logo" width="50" height="50" class="align-text-center" >
         FotoHuasi  
       </a>
 <!-- BOTÓN DE FORMULARIO LOGIN-->
       <div class="login">
-        <button type="button" class="btn  btn-lg text-light" data-bs-toggle="modal" data-bs-target="#exampleModalformulario">
-          <a href="#exampleModalformulario">
+        <button type="button" class="btn  btn-lg text-light" data-bs-toggle="modal" data-bs-target="#login-modal">
+          <a href="#login-modal">
             <i class="bi bi-person-circle"></i>
           </a>
         </button>
@@ -45,7 +45,7 @@
 
 
 <!-- INICIO Modal DE FORMULARIO LOGIN-->
-<div class="modal fade" id="exampleModalformulario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content bg-black">
       <div class="modal-header">
@@ -57,19 +57,19 @@
         <form class="formulario-login">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email" required>
             <div id="emailHelp" class="form-text text-light">Nunca compartiremos su email con nadie.</div>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1 " placeholder="Ingrese su contraseña">
+            <input type="password" class="form-control" id="exampleInputPassword1 " placeholder="Ingrese su contraseña" required>
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
           </div>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="submit" class="btn btn-primary" formaction="./dashboard/profile.html">Enviar</button>
         </form>
         <!-- FIN DE FORMULARIO LOGIN -->
       </div>
@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-3">
         <!-- CARD 1-->
-                      <div class="card" style="width: 22rem;">
+            <div class="card" id="card1" style="width: 22rem;">
               <img src="https://firebasestorage.googleapis.com/v0/b/fotohuasi-24c24.appspot.com/o/portrait1.jpg?alt=media&token=a3e715ab-155d-47e3-9164-14aa317cbd31&_gl=1*ckbp8j*_ga*MzkzMzkwMjc0LjE2OTY2NDAxMzY.*_ga_CW55HF8NVT*MTY5NjY3Nzk5OS4yLjEuMTY5NjY3ODA4NS40NC4wLjA." class="card-img-top" alt="">
               <div class="card-body">
                 <h5 class="card-title">Jane | Fotografía Social</h5>
@@ -182,7 +182,7 @@
          
           <section class="sectioncard">
             <div class="container-fluid">
-              <div class="row justify-content-between">
+              <div class="row">
                   <div class="col-xs-12 col-md-6 col-lg-3 ">
       <!-- CARD 2-->
       <!-- Button trigger modal -->
@@ -619,7 +619,7 @@
     <div class="row p-5 bg-black text-light text-opacity-75 justify-content-between">
         <div class="col-xs-12 col-md-6 col-lg-3 ">
           <p class="h3 opacity-75">
-            <a class="navbar-brand text-light" href="../proyecto-fotohuasi-GoCode-1/index.html">
+            <a class="navbar-brand text-light" href="/index.html">
             <img src="https://firebasestorage.googleapis.com/v0/b/fotohuasi-24c24.appspot.com/o/Shutter-Aperture-17.svg?alt=media&token=022bee57-76af-4b5a-bc57-2bcb8a1750ec&_gl=1*18wubbo*_ga*MzkzMzkwMjc0LjE2OTY2NDAxMzY.*_ga_CW55HF8NVT*MTY5NjY3Nzk5OS4yLjEuMTY5NjY3ODAzNC4yNS4wLjA." alt="Logo" width="50" height="50" class="align-text-center" >
             </a>
           </p>

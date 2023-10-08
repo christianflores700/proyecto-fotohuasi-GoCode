@@ -23,7 +23,7 @@
     <!-- FIN TITULO -->
   </head>
 
-<body class="bg-black">
+<body class="container-fluid bg-black">
 <!-- header -->
 <header>
   <!-- Aqui comienza el navbar -->
@@ -43,104 +43,72 @@
 <!-- MAIN -->
 
 <main>
-
-
-
-        <form class="formulario-login">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
-            <div id="emailHelp" class="form-text">Nunca compartiremos su email con nadie.</div>
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1 " placeholder="Ingrese su contraseña">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-     
-        
- 
-      
-
-
-
-
- 
+  <section>
+    <form class="formulario-login">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+        <div id="emailHelp" class="form-text text-light">Nunca compartiremos su email con nadie.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1 " placeholder="Ingrese su contraseña">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar <a href="/profile.html"></a></button>
+    </form>
+  </section> 
 </main>
+
 <!-- FOOTER -->
 <footer>
-<div class="container-fluid">
-    <div class="row p-5 bg-black text-light text-opacity-75 justify-content-between">
-        <div class="col-xs-12 col-md-6 col-lg-3 ">
-          <p class="h3 opacity-75">
-            <a class="navbar-brand text-light" href="">
-            <img src="https://firebasestorage.googleapis.com/v0/b/fotohuasi-24c24.appspot.com/o/Shutter-Aperture-17.svg?alt=media&token=022bee57-76af-4b5a-bc57-2bcb8a1750ec&_gl=1*18wubbo*_ga*MzkzMzkwMjc0LjE2OTY2NDAxMzY.*_ga_CW55HF8NVT*MTY5NjY3Nzk5OS4yLjEuMTY5NjY3ODAzNC4yNS4wLjA." alt="Logo" width="50" height="50" class="align-text-center" >
-            </a>
-          </p>
-          <ul class="list-unstyled">
-            <li>Diseñado y construido por 
-              <a href="https://www.linkedin.com/in/christian-flores-cristaldo/" target="_blank" class="a">Christian Flores</a>
-            </li>
-            <li>  Proyecto interniveles N2
-              <a href="https://www.gocode.ar/" target="_blank" class="a"><b>GoCode</b>
-              </a>
-            </li>
-            <li>&copyCopyright 2023</li>
-            <li>v1.0</li>
-          </ul>
-         
-        </div>
-
-  <!-- Aqui inicia el apartado de contacto RRSS-->
-
-      <div class="col-xs-12 col-md-6 col-lg-3">
-          <div>
-            <button type="button" class="btn btn-lg ">
-              <a href="https://facebook.com" target="_blank">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </button>
-          </div>
-          <div>
-          <button type="button" class="btn  btn-lg">
-            <a href="https://facebook.com" target="_blank">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-          </button>
-        </div>
-        <div>
-          <button type="button" class="btn btn-lg mb-2">
-            <a href="https://instagram.com" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </button>
-        </div>
-        <div>
-          <button type="button" class="btn btn-lg">
-            <a href="https://discord.com" target="_blank">
-              <i class="bi bi-discord"></i>
-            </a>
-          </button>
-        </div>
-      </div>
-  <!-- Aqui finaliza el apartado de contacto RRSS -->
-
-<!-- Aqui empieza el apartado de Quienes somos -->
-      <!-- <div class="col-xs-12 col-md-6 col-lg-3 text-lg-end">
-        <a href="http://" class="a h5">Quienes somos</a>
-        <a href="http://">Preguntas Frecuentes</a>
-        
-      </div> -->
-    </div>
-
-</div>
+            <div class="container-fluid text-light fixed-bottom opacity-75">
+                <div class="row  justify-content-center">
+              <!-- Aqui inicia el apartado de contacto RRSS-->
+                  <div class="col-xs-12 col-md-6 col-lg-3 d-flex ">
+                    <ul class="list-unstyled m-1 p-1">
+                        <li>
+                            <small>
+                            <a href="https://www.linkedin.com/in/christian-flores-cristaldo/" target="_blank" class="a text-light">Christian Flores</a>
+                                &copy 2023 
+                            </small>
+                        </li>
+                        <li><small>Rosario, Argentina.</small></li>
+                    </ul>  
+                        <button type="button" class="btn ">
+                          <a href="https://facebook.com" target="_blank">
+                            <i class="bi bi-facebook"></i>
+                          </a>
+                        </button>
+            
+                        <button type="button" class="btn ">
+                        <a href="https://facebook.com" target="_blank">
+                          <i class="bi bi-whatsapp"></i>
+                        </a>
+                        </button>
+                    
+                        <button type="button" class="btn">
+                        <a href="https://instagram.com" target="_blank">
+                          <i class="bi bi-instagram"></i>
+                        </a>
+                        </button>
+                    
+                       <button type="button" class="btn">
+                        <a href="https://discord.com" target="_blank">
+                          <i class="bi bi-discord"></i>
+                        </a>
+                       </button>
+                    </div>
+                  </div>
+              <!-- Aqui finaliza el apartado de contacto RRSS -->
+           
+            </div>
+            
 </footer>
-
+  <!-- End of Footer -->
     
    <!--SCRIPTS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
