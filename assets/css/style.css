@@ -35,6 +35,7 @@ a:hover,:visited{
     color: #ffffff;
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
+    overflow-x:hidden;
 }
 
 /*estilos de los MODALES*/
