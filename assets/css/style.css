@@ -1,6 +1,6 @@
 body::-webkit-scrollbar{
   background-color: #a0a0a02c;
-  width: 5px;
+  width: 0.3rem;
 }
 body::-webkit-scrollbar-thumb{
   background: #ffffff2f;
@@ -14,17 +14,16 @@ body::-webkit-scrollbar-thumb{
         color:#ffffffdd;
             
 } 
-.a,li  {
+a,li {
     text-decoration:none;
     margin-bottom: 0.3rem;
     color: #ffffffdd;
 }
 
-a:hover,:visited{
+a:hover{
    text-decoration: underline; 
-   color: #cfd2d4ed;
+   color: #ffffff;
    font-size: 1.1rem;
-    box-shadow: 0px 1px 0px 0px #dadce2 ;
 }
 
 /* estilos de las tarjetas*/
@@ -48,7 +47,6 @@ a:hover,:visited{
 .bgmain{
     background-color: #4d4d4d41;
     text-align: center;
-    padding: 1px;
     background-size: cover;
     box-sizing: border-box;
 }
@@ -65,11 +63,7 @@ margin: 0.3rem;
   font-size: x-large;
 }
 
-.formulario-de-registro{
-  color: #ffffff;
-  background-color: #000000;
- 
-}
+/* estilos del formulario */
 .form-group{
   margin-bottom: 2rem;
  
@@ -82,8 +76,26 @@ margin: 0.3rem;
   color: #fff;
 }
 .container-fluid{
-  background-color: #030303;
-  
+  background-color: #030303;  
+  color: #fff;
+
+}
+
+/* estilos de texto */
+#p0 {
+  text-indent: 10%;
+}
+.about-us{
+  font-family: 'Onest', sans-serif;
+  font-size: 2rem;
+  margin: 5rem;
+  color: #fff;
+  overflow:scroll;
+}
+article h1,h2,h3{
+  text-align: center;
+  text-decoration-line: underline;
+  font-size: 3rem
 }
 /* ERROR 404 */
   postcss-cssnext;
